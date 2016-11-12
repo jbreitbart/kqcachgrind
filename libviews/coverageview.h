@@ -23,11 +23,21 @@
 #ifndef COVERAGEVIEW_H
 #define COVERAGEVIEW_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtreewidget.h>
 #include <QTreeWidget>
 
+#include "listutils.h"
+#include "subcost.h"
 #include "tracedata.h"
 #include "traceitemview.h"
-#include "listutils.h"
+
+class CostItem;
+class QKeyEvent;
+class QObject;
+class QPoint;
+class QWidget;
 
 class CoverageView: public QTreeWidget, public TraceItemView
 {

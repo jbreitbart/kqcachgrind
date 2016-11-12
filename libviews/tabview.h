@@ -24,22 +24,40 @@
 #ifndef TABVIEW_H
 #define TABVIEW_H
 
-#include <QWidget>
-#include <QTabWidget>
-#include <QTabBar>
-#include <QMouseEvent>
+#include <qlist.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qsplitter.h>
+#include <qstring.h>
+#include <qtabbar.h>
+#include <qtabwidget.h>
+#include <qwidget.h>
+#include <QEvent>
 #include <QHideEvent>
-#include <QShowEvent>
+#include <QList>
+#include <QMouseEvent>
 #include <QMoveEvent>
 #include <QResizeEvent>
-#include <QEvent>
+#include <QShowEvent>
 #include <QSplitter>
-#include <QList>
+#include <QTabBar>
+#include <QTabWidget>
+#include <QWidget>
 
 #include "traceitemview.h"
 
+class CostItem;
+class QEvent;
+class QHideEvent;
 class QLabel;
+class QMouseEvent;
+class QMoveEvent;
+class QObject;
+class QPoint;
+class QResizeEvent;
+class QShowEvent;
 class TabView;
+class TraceData;
 
 /**
  * Subclass of QTabBar to enable context menu on tabs

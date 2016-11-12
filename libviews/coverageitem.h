@@ -23,10 +23,16 @@
 #ifndef COVERAGEITEM_H
 #define COVERAGEITEM_H
 
+#include <qtreewidget.h>
 #include <QTreeWidget>
+
+#include "context.h"
+#include "subcost.h"
 #include "tracedata.h"
 
 class Coverage;
+class EventType;
+class TraceFunction;
 
 class CallerCoverageItem: public QTreeWidgetItem
 {

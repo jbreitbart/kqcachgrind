@@ -24,13 +24,17 @@
 
 #include "stackselection.h"
 
-#include <QPushButton>
-#include <QVBoxLayout>
-#include <QTreeWidget>
-#include <QHeaderView>
+#include <qboxlayout.h>
+#include <qglobal.h>
+#include <qheaderview.h>
+#include <qlist.h>
+#include <qstringlist.h>
+#include <qtreewidget.h>
 
+#include "eventtype.h"
 #include "stackbrowser.h"
 #include "stackitem.h"
+#include "tracedata.h"
 
 
 StackSelection::StackSelection(QWidget* parent)

@@ -23,12 +23,17 @@
 #ifndef GLOBALCONFIG_H
 #define GLOBALCONFIG_H
 
-#include <QStringList>
+#include <qhash.h>
+#include <qstring.h>
+#include <qstringlist.h>
 #include <QHash>
+#include <QStringList>
 
 #include "tracedata.h"
 
 class GlobalConfig;
+class TraceData;
+class TraceObject;
 
 /**
  * Global configuration (only non-GUI options).

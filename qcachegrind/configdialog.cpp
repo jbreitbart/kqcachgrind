@@ -22,19 +22,20 @@
 
 #include "configdialog.h"
 
-#include <QWidget>
-#include <QLabel>
-#include <QFrame>
-#include <QListWidget>
-#include <QStackedWidget>
-#include <QDialogButtonBox>
-#include <QHBoxLayout>
-#include <QVBoxLayout>
-#include <QTimer>
+#include <QtCore/qglobal.h>
+#include <qboxlayout.h>
+#include <qdialogbuttonbox.h>
+#include <qfont.h>
+#include <qframe.h>
+#include <qglobal.h>
+#include <qlabel.h>
+#include <qlistwidget.h>
+#include <qstackedwidget.h>
 
+#include "colorsettings.h"
+#include "configpage.h"
 #include "generalsettings.h"
 #include "sourcesettings.h"
-#include "colorsettings.h"
 
 //
 // ConfigDialog
@@ -165,4 +166,3 @@ void ConfigDialog::accept()
     QDialog::accept();
 }
 
-#include "configdialog.moc"

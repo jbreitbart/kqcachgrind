@@ -23,13 +23,19 @@
 #ifndef TRACEITEMVIEW_H
 #define TRACEITEMVIEW_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtimer.h>
 #include <QTimer>
 
+#include "context.h"
 #include "tracedata.h"
 
-class QWidget;
+class CostItem;
+class EventType;
 class QMenu;
-
+class QObject;
+class QWidget;
 class TopLevelBase;
 class TraceItemView;
 

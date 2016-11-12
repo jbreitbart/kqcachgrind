@@ -22,16 +22,32 @@
 
 #include "sourceitem.h"
 
-#include <QPixmap>
-#include <QRegExp>
-#include <QPainter>
-#include <QPolygon>
-#include <QTextDocument>
-#include <QLineEdit>
+#include <QtCore/qglobal.h>
+#include <qabstractitemmodel.h>
+#include <qcolor.h>
+#include <qlineedit.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qpainter.h>
+#include <qpalette.h>
+#include <qpixmap.h>
+#include <qpoint.h>
+#include <qpolygon.h>
+#include <qrect.h>
+#include <qregexp.h>
+#include <qvariant.h>
+#include <qwidget.h>
 
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
 #include "sourceview.h"
+#include "tracedata.h"
+#include "traceitemview.h"
+
+class EventType;
 
 
 //

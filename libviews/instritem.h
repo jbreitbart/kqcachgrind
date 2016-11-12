@@ -24,12 +24,25 @@
 #define INSTRITEM_H
 
 
-#include <QTreeWidget>
+#include <qitemdelegate.h>
+#include <qsize.h>
+#include <qstring.h>
+#include <qstyleoption.h>
+#include <qtreewidget.h>
+#include <qvector.h>
 #include <QItemDelegate>
+#include <QTreeWidget>
 
+#include "addr.h"
+#include "subcost.h"
 #include "tracedata.h"
 
 class InstrView;
+class QModelIndex;
+class QPainter;
+class TraceInstr;
+class TraceInstrCall;
+class TraceInstrJump;
 
 class InstrItem: public QTreeWidgetItem
 {

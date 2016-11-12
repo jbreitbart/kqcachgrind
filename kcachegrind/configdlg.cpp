@@ -30,8 +30,8 @@
 #include <klocale.h>
 #include <knumvalidator.h>
 
-#include "tracedata.h"
 #include "globalguiconfig.h"
+#include "tracedata.h"
 
 
 ConfigDlg::ConfigDlg(GlobalGUIConfig* c, TraceData* data,

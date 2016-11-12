@@ -22,10 +22,20 @@
 
 #include "partgraph.h"
 
-#include <QPixmap>
+#include <qbrush.h>
+#include <qglobal.h>
+#include <qmap.h>
+#include <qobject.h>
+#include <qpalette.h>
 
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
+#include "subcost.h"
+
+class EventType;
+class QWidget;
 
 
 // PartAreaWidget
@@ -524,4 +534,3 @@ QColor SubPartItem::backColor() const
 }
 
 
-#include "partgraph.moc"

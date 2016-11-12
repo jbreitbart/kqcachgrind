@@ -18,8 +18,20 @@
 
 #include "functionlistmodel.h"
 
+#include <QtCore/qglobal.h>
+#include <qalgorithms.h>
+#include <qcolor.h>
+#include <qglobal.h>
+#include <qmap.h>
+
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
+#include "subcost.h"
+#include "tracedata.h"
+
+class EventType;
 
 FunctionListModel::FunctionListModel()
     : QAbstractItemModel(0)
@@ -471,4 +483,3 @@ bool FunctionListModel::FunctionLessThan::operator()(TraceFunction *left,
 }
 
 
-#include "functionlistmodel.moc"

@@ -23,6 +23,8 @@
 #ifndef UTILS_H
 #define UTILS_H
 
+#include <qbytearray.h>
+#include <qglobal.h>
 #include <qstring.h>
 
 class QIODevice;

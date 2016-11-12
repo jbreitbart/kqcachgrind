@@ -22,11 +22,18 @@
 
 #include "stackitem.h"
 
-#include <QPixmap>
+#include <qcolor.h>
+#include <qnamespace.h>
+#include <qpixmap.h>
+#include <qstring.h>
 
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
 #include "stackselection.h"
+#include "tracedata.h"
+
+class EventType;
 
 
 // StackItem

@@ -23,12 +23,23 @@
 
 #include "eventtypeview.h"
 
-#include <QAction>
-#include <QMenu>
-#include <QHeaderView>
+#include <qheaderview.h>
+#include <qlist.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qsize.h>
+#include <qstringlist.h>
+#include <qwidget.h>
 
+#include "context.h"
+#include "costitem.h"
+#include "eventtype.h"
 #include "eventtypeitem.h"
 #include "toplevelbase.h"
+#include "tracedata.h"
+
+class QAction;
+class QPoint;
 
 
 //
@@ -335,4 +346,3 @@ void EventTypeView::itemChanged(QTreeWidgetItem* item, int c)
   refresh();
 }
 
-#include "eventtypeview.moc"

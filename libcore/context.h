@@ -19,8 +19,9 @@
 #ifndef CONTEXT_H
 #define CONTEXT_H
 
-#include <QString>
+#include <qstring.h>
 #include <QHash>
+#include <QString>
 
 /**
  * Base class for source contexts which event costs contained

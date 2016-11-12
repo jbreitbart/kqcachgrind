@@ -22,11 +22,23 @@
 
 #include "callitem.h"
 
-#include <QPixmap>
+#include <qcolor.h>
+#include <qfontmetrics.h>
+#include <qicon.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qstring.h>
 
+#include "callview.h"
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
-#include "callview.h"
+#include "tracedata.h"
+
+class EventType;
 
 
 // CallItem

@@ -23,14 +23,28 @@
 
 #include "callmapview.h"
 
-#include <QPixmap>
-#include <QAction>
-#include <QMenu>
+#include <QtCore/qglobal.h>
+#include <qaction.h>
+#include <qbytearray.h>
+#include <qglobal.h>
+#include <qmenu.h>
+#include <qobject.h>
+#include <qpalette.h>
+#include <qstringlist.h>
+#include <qvariant.h>
 
 #include "config.h"
+#include "context.h"
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
+#include "subcost.h"
 #include "toplevelbase.h"
+
+class EventType;
+class QPoint;
+class QWidget;
 
 
 //
@@ -1027,4 +1041,3 @@ void CallMapView::saveOptions(const QString& prefix, const QString& postfix)
     delete g;
 }
 
-#include "callmapview.moc"

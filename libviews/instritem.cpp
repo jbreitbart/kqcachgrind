@@ -22,13 +22,31 @@
 
 #include "instritem.h"
 
-#include <QPixmap>
-#include <QPainter>
-#include <QPolygon>
+#include <qabstractitemmodel.h>
+#include <qcolor.h>
+#include <qfontmetrics.h>
+#include <qglobal.h>
+#include <qicon.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qpainter.h>
+#include <qpalette.h>
+#include <qpixmap.h>
+#include <qpoint.h>
+#include <qpolygon.h>
+#include <qrect.h>
+#include <qvariant.h>
 
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
-#include "listutils.h"
 #include "instrview.h"
+#include "listutils.h"
+#include "tracedata.h"
+#include "traceitemview.h"
+
+class EventType;
 
 //
 // InstrItem

@@ -23,11 +23,16 @@
 #ifndef SOURCESETTINGS_H
 #define SOURCESETTINGS_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+
 #include "configpage.h"
 #include "ui_sourcesettings.h"
 
-class TraceData;
+class QObject;
 class QTreeWidgetItem;
+class QWidget;
+class TraceData;
 
 class SourceSettings: public ConfigPage
 {

@@ -23,9 +23,21 @@
 #ifndef SOURCEVIEW_H
 #define SOURCEVIEW_H
 
+#include <qglobal.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtreewidget.h>
+#include <qvector.h>
 #include <QTreeWidget>
+
+#include "tracedata.h"
 #include "traceitemview.h"
 
+class CostItem;
+class QKeyEvent;
+class QObject;
+class QPoint;
+class QWidget;
 class SourceItem;
 
 class SourceView : public QTreeWidget, public TraceItemView

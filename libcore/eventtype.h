@@ -19,12 +19,15 @@
 #ifndef EVENTTYPE_H
 #define EVENTTYPE_H
 
+#include <qstring.h>
 #include <QString>
 
-#include "subcost.h"
 #include "costitem.h"
+#include "subcost.h"
 
+class EventTypeMapping;
 class EventTypeSet;
+template <typename T> class QList;
 
 /**
  * A cost type, e.g. "L1 Read Miss", short "l1rm".

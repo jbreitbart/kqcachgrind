@@ -22,12 +22,23 @@
 
 #include "colorsettings.h"
 
-#include <QTreeWidgetItem>
-#include <QFileDialog>
+#include <qglobal.h>
+#include <qicon.h>
+#include <qmap.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qpushbutton.h>
+#include <qstringlist.h>
+#include <qtreewidget.h>
+#include <qvariant.h>
 
-#include "tracedata.h"
+#include "context.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
+#include "qtcolorbutton.h"
+#include "tracedata.h"
+
+class QWidget;
 
 //
 // ColorSettings
@@ -180,4 +191,3 @@ void ColorSettings::accept()
     }
 }
 
-#include "colorsettings.moc"

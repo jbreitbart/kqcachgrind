@@ -23,13 +23,15 @@
 #ifndef LOADER_H
 #define LOADER_H
 
+#include <qstring.h>
 #include <QList>
 #include <QString>
 
-class QIODevice;
-class TraceData;
 class Loader;
 class Logger;
+class QIODevice;
+class TraceData;
+template <typename T> class QList;
 
 /**
  * To implement a new loader, inherit from the Loader class and

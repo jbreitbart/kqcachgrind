@@ -24,16 +24,23 @@
 #ifndef PARTSELECTION_H
 #define PARTSELECTION_H
 
-#include <QWidget>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qwidget.h>
 #include <QPoint>
+#include <QWidget>
 
 #include "tracedata.h"
 #include "traceitemview.h"
 
+class CostItem;
+class PartAreaWidget;
 class QLabel;
+class QObject;
+class QPoint;
+class TopLevelBase;
 class TraceData;
 class TreeMapItem;
-class PartAreaWidget;
 
 class PartSelection: public QWidget, public TraceItemView
 {

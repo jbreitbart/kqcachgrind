@@ -19,8 +19,11 @@
 #ifndef SUBCOST_H
 #define SUBCOST_H
 
-#include <QVector>
+#include <qlist.h>
+#include <qstring.h>
+#include <qvector.h>
 #include <QList>
+#include <QVector>
 
 #include "utils.h"
 
@@ -68,8 +71,9 @@ class SubCost
     uint64 v;
 };
 
-class ProfileCostArray;
 class EventType;
+class ProfileCostArray;
+
 typedef QList<ProfileCostArray*> TraceCostList;
 
 /**

@@ -19,19 +19,24 @@
 
 #include "tracedata.h"
 
+#include <QtCore/qglobal.h>
 #include <errno.h>
-#include <stdlib.h>
+#include <qalgorithms.h>
+#include <qbytearray.h>
+#include <qchar.h>
+#include <qdir.h>
+#include <qfile.h>
+#include <qfileinfo.h>
+#include <qiodevice.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <string.h>
 
-#include <QFile>
-#include <QDir>
-#include <QFileInfo>
-#include <QDebug>
-
-#include "logger.h"
-#include "loader.h"
-#include "globalconfig.h"
-#include "utils.h"
 #include "fixcost.h"
+#include "globalconfig.h"
+#include "loader.h"
+#include "logger.h"
+#include "pool.h"
 
 
 #define TRACE_DEBUG      0

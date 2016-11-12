@@ -17,8 +17,17 @@
 */
 
 #include "fixcost.h"
-#include "utils.h"
+
+#include <QtCore/qglobal.h>
+#include <qbytearray.h>
+#include <qstring.h>
+
 #include "addr.h"
+#include "costitem.h"
+#include "eventtype.h"
+#include "pool.h"
+#include "tracedata.h"
+#include "utils.h"
 
 // FixCost
 

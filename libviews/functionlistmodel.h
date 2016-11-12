@@ -19,13 +19,28 @@
 #ifndef FUNCTIONLISTMODEL_H
 #define FUNCTIONLISTMODEL_H
 
+#include <qabstractitemmodel.h>
+#include <qlist.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qregexp.h>
+#include <qstring.h>
+#include <qvariant.h>
 #include <QAbstractItemModel>
+#include <QList>
 #include <QPixmap>
 #include <QRegExp>
-#include <QList>
 
-#include "tracedata.h"
+#include "context.h"
 #include "subcost.h"
+#include "tracedata.h"
+
+class EventType;
+class QObject;
+class TraceCostItem;
+class TraceData;
+class TraceFunction;
 
 
 class FunctionListModel : public QAbstractItemModel

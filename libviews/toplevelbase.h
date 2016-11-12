@@ -26,9 +26,14 @@
 #ifndef TOPLEVELBASE_H
 #define TOPLEVELBASE_H
 
+#include <qstring.h>
+
+#include "context.h"
 #include "tracedata.h"
 #include "traceitemview.h"
 
+class CostItem;
+class EventType;
 class QMenu;
 
 class TopLevelBase

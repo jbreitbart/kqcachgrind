@@ -23,14 +23,23 @@
 #ifndef CALLMAPVIEW_H
 #define CALLMAPVIEW_H
 
+#include <qcolor.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qstring.h>
 #include <QPixmap>
 
-#include "treemap.h"
 #include "tracedata.h"
 #include "traceitemview.h"
+#include "treemap.h"
 
+class CostItem;
+class ProfileCostArray;
 class QAction;
 class QMenu;
+class QObject;
+class QPoint;
+class QWidget;
 
 class CallMapView: public TreeMapWidget, public TraceItemView
 {

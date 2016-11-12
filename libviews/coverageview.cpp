@@ -23,14 +23,26 @@
 
 #include "coverageview.h"
 
-#include <QAction>
-#include <QMenu>
-#include <QHeaderView>
-#include <QKeyEvent>
+#include <qevent.h>
+#include <qglobal.h>
+#include <qheaderview.h>
+#include <qlist.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qpoint.h>
+#include <qsize.h>
+#include <qstringlist.h>
+#include <qtreeview.h>
 
-#include "globalconfig.h"
-#include "coverageitem.h"
+#include "context.h"
+#include "costitem.h"
 #include "coverage.h"
+#include "coverageitem.h"
+#include "globalconfig.h"
+#include "tracedata.h"
+
+class QAction;
+class QWidget;
 
 
 //
@@ -371,4 +383,3 @@ void CoverageView::refresh()
     }
 }
 
-#include "coverageview.moc"

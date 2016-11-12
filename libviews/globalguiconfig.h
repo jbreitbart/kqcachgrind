@@ -23,11 +23,19 @@
 #ifndef GLOBALGUICONFIG_H
 #define GLOBALGUICONFIG_H
 
+#include <qcolor.h>
+#include <qhash.h>
+#include <qstring.h>
 #include <QColor>
-#include <QString>
 #include <QHash>
+#include <QString>
 
+#include "context.h"
 #include "globalconfig.h"
+
+class CostItem;
+class EventType;
+class TraceFunction;
 
 /**
  * Color setting for a cost item

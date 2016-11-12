@@ -25,6 +25,8 @@
 
 #include "tracedata.h"
 
+class EventType;
+
 /**
  * Coverage of a function.
  * When analysis is done, every function involved will have a

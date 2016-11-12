@@ -25,14 +25,22 @@
 #ifndef STACKSELECTION_H
 #define STACKSELECTION_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qwidget.h>
 #include <QWidget>
+
+#include "context.h"
 #include "tracedata.h"
 
+class CostItem;
+class EventType;
+class QObject;
 class QTreeWidget;
 class QTreeWidgetItem;
-class TraceFunction;
-class TraceData;
 class StackBrowser;
+class TraceData;
+class TraceFunction;
 
 
 class StackSelection : public QWidget

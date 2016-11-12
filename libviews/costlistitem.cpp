@@ -18,13 +18,18 @@
 
 #include "costlistitem.h"
 
-#include <math.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qstring.h>
 
-#include <QPixmap>
-
-#include "listutils.h"
-#include "coverage.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
+#include "listutils.h"
+#include "tracedata.h"
+
+class EventType;
 
 
 // CostListItem

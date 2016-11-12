@@ -18,7 +18,10 @@
 
 #include "context.h"
 
-#include <QObject>
+#include <qbytearray.h>
+#include <qglobal.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
 
 //---------------------------------------------------
 // ProfileContext

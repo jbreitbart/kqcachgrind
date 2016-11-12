@@ -23,12 +23,18 @@
 #ifndef COLORSETTINGS_H
 #define COLORSETTINGS_H
 
+#include <qcolor.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+
 #include "configpage.h"
 #include "context.h"
 #include "ui_colorsettings.h"
 
-class TraceData;
+class QObject;
 class QTreeWidgetItem;
+class QWidget;
+class TraceData;
 
 class ColorSettings: public ConfigPage
 {

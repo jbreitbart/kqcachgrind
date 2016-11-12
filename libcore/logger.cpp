@@ -22,7 +22,10 @@
 
 #include "logger.h"
 
-#include <QtDebug>
+#include <QtCore/qglobal.h>
+#include <qbytearray.h>
+#include <qdebug.h>
+#include <qglobal.h>
 
 
 /// Logger

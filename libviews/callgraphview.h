@@ -23,36 +23,64 @@
 #ifndef CALLGRAPHVIEW_H
 #define CALLGRAPHVIEW_H
 
-#include <qwidget.h>
+#include <qglobal.h>
+#include <qgraphicsitem.h>
+#include <qgraphicsview.h>
+#include <qlist.h>
 #include <qmap.h>
+#include <qobjectdefs.h>
+#include <qpair.h>
+#include <qpoint.h>
+#include <qpolygon.h>
+#include <qrect.h>
+#include <qsize.h>
+#include <qstring.h>
 #include <qtimer.h>
-
-#include <QGraphicsView>
-#include <QGraphicsScene>
-#include <QGraphicsRectItem>
-#include <QGraphicsPolygonItem>
-#include <QGraphicsPathItem>
-#include <QPixmap>
-#include <QFocusEvent>
-#include <QPolygon>
-#include <QList>
-#include <QKeyEvent>
-#include <QResizeEvent>
+#include <qwidget.h>
 #include <QContextMenuEvent>
+#include <QFocusEvent>
+#include <QGraphicsPathItem>
+#include <QGraphicsPolygonItem>
+#include <QGraphicsRectItem>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QKeyEvent>
+#include <QList>
 #include <QMouseEvent>
+#include <QPixmap>
+#include <QPolygon>
+#include <QResizeEvent>
 
-#include "treemap.h" // for DrawParams
+#include "context.h"
 #include "tracedata.h"
 #include "traceitemview.h"
+#include "treemap.h" // for DrawParams
 
-class QProcess;
-class QTemporaryFile;
-class QIODevice;
-
-class CanvasNode;
-class CanvasEdge;
-class GraphEdge;
 class CallGraphView;
+class CanvasEdge;
+class CanvasNode;
+class CostItem;
+class EventType;
+class GraphEdge;
+class QAction;
+class QContextMenuEvent;
+class QFocusEvent;
+class QGraphicsScene;
+class QIODevice;
+class QKeyEvent;
+class QMenu;
+class QMouseEvent;
+class QObject;
+class QPainter;
+class QPixmap;
+class QProcess;
+class QResizeEvent;
+class QStyleOptionGraphicsItem;
+class QTemporaryFile;
+class QWidget;
+class TraceCall;
+class TraceData;
+class TraceFunction;
 
 
 // temporary parts of call graph to be shown

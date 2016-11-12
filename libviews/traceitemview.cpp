@@ -22,10 +22,14 @@
 
 #include "traceitemview.h"
 
-#include <QtGlobal>
-#include <QWidget>
+#include <qlist.h>
+#include <qobject.h>
+#include <qwidget.h>
 
+#include "costitem.h"
 #include "toplevelbase.h"
+
+class EventType;
 
 #define TRACE_UPDATES 0
 
@@ -473,4 +477,3 @@ void TraceItemView::addGoMenu(QMenu* p)
   if (_topLevel) _topLevel->addGoMenu(p);
 }
 
-#include "traceitemview.moc"

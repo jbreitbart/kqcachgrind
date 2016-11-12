@@ -19,6 +19,10 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+#include <qlist.h>
+#include <qstring.h>
+#include <qstringlist.h>
+#include <qvariant.h>
 #include <QString>
 #include <QVariant>
 

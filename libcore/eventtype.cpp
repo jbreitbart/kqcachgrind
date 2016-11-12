@@ -18,10 +18,13 @@
 
 #include "eventtype.h"
 
-#include <QRegExp>
-#include <QDebug>
-
-#include "globalconfig.h"
+#include <QtCore/qglobal.h>
+#include <qbytearray.h>
+#include <qchar.h>
+#include <qdebug.h>
+#include <qglobal.h>
+#include <qlist.h>
+#include <qregexp.h>
 
 //---------------------------------------------------
 // EventType

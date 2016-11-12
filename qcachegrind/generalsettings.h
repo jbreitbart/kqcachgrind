@@ -26,6 +26,9 @@
 #include "configpage.h"
 #include "ui_generalsettings.h"
 
+class QString;
+class QWidget;
+
 class GeneralSettings: public ConfigPage
 {
 public:

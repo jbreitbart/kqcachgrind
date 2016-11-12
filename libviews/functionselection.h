@@ -23,25 +23,45 @@
 #ifndef FUNCTIONSELECTION_H
 #define FUNCTIONSELECTION_H
 
-#include <QTimer>
-#include <QWidget>
+#include <qmap.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qstyleditemdelegate.h>
+#include <qstyleoption.h>
+#include <qtimer.h>
+#include <qwidget.h>
 #include <QModelIndex>
 #include <QStyledItemDelegate>
+#include <QTimer>
+#include <QWidget>
 
+#include "context.h"
+#include "listutils.h"
+#include "subcost.h"
+#include "toplevelbase.h"
 #include "tracedata.h"
 #include "traceitemview.h"
-#include "listutils.h"
-#include "toplevelbase.h"
 
+class CostItem;
+class FunctionListModel;
+class QAbstractItemView;
 class QAction;
-class QMenu;
-class QLabel;
 class QComboBox;
+class QHelpEvent;
+class QLabel;
 class QLineEdit;
+class QMenu;
+class QModelIndex;
+class QObject;
+class QPoint;
 class QTreeView;
 class QTreeWidget;
 class QTreeWidgetItem;
-class FunctionListModel;
+class TopLevelBase;
+class TraceCostItem;
+class TraceData;
+class TraceFunction;
 
 class FunctionSelection: public QWidget, public TraceItemView
 {

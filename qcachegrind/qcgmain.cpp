@@ -20,15 +20,19 @@
  * QCachegrind startup
  */
 
-#include <QDir>
-#include <QApplication>
+#include <qapplication.h>
+#include <qcoreapplication.h>
+#include <qdir.h>
+#include <qglobal.h>
+#include <qstringlist.h>
 
-#include "qcgconfig.h"
 #include "config.h"
-#include "globalguiconfig.h"
-#include "qcgtoplevel.h"
-#include "tracedata.h"
+#include "context.h"
 #include "loader.h"
+#include "qcgconfig.h"
+#include "qcgtoplevel.h"
+
+class QString;
 
 int main( int argc, char ** argv )
 {

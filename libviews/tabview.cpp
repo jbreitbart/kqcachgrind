@@ -24,29 +24,37 @@
 
 #include "tabview.h"
 
-#include <QLabel>
-#include <QSplitter>
-#include <QTabWidget>
-#include <QHideEvent>
-#include <QMoveEvent>
-#include <QEvent>
-#include <QShowEvent>
-#include <QVBoxLayout>
-#include <QResizeEvent>
-#include <QMouseEvent>
-#include <QAction>
-#include <QMenu>
+#include <QtCore/qglobal.h>
+#include <qaction.h>
+#include <qboxlayout.h>
+#include <qbytearray.h>
+#include <qcoreevent.h>
+#include <qevent.h>
+#include <qfont.h>
+#include <qfontmetrics.h>
+#include <qglobal.h>
+#include <qlabel.h>
+#include <qmenu.h>
+#include <qobject.h>
+#include <qrect.h>
+#include <qregion.h>
+#include <qsize.h>
+#include <qsizepolicy.h>
+#include <qstringlist.h>
+#include <qvariant.h>
 
-#include "config.h"
-#include "globalconfig.h"
-#include "eventtypeview.h"
-#include "partview.h"
-#include "callview.h"
-#include "coverageview.h"
-#include "callmapview.h"
-#include "instrview.h"
-#include "sourceview.h"
 #include "callgraphview.h"
+#include "callmapview.h"
+#include "callview.h"
+#include "config.h"
+#include "context.h"
+#include "costitem.h"
+#include "coverageview.h"
+#include "eventtypeview.h"
+#include "instrview.h"
+#include "partview.h"
+#include "sourceview.h"
+#include "tracedata.h"
 
 
 // defaults for subviews in TabView
@@ -1037,3 +1045,5 @@ void TabView::saveOptions(const QString& prefix, const QString& postfix)
 }
 
 #include "tabview.moc"
+
+class QPoint;

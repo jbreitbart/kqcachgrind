@@ -23,10 +23,15 @@
 #ifndef CALLITEM_H
 #define CALLITEM_H
 
+#include <qtreewidget.h>
 #include <QTreeWidget>
+
+#include "subcost.h"
 #include "tracedata.h"
 
 class CallView;
+class TraceCall;
+class TraceFunction;
 
 class CallItem: public QTreeWidgetItem
 {

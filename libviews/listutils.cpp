@@ -22,9 +22,11 @@
 
 #include "listutils.h"
 
-#include <QPainter>
-#include <QPixmap>
+#include <qnamespace.h>
+#include <qpainter.h>
 
+#include "costitem.h"
+#include "eventtype.h"
 #include "globalguiconfig.h"
 
 #define COSTPIX_WIDTH 25

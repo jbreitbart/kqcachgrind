@@ -22,6 +22,13 @@
 
 #include "coverage.h"
 
+#include <qglobal.h>
+
+#include "costitem.h"
+#include "subcost.h"
+
+class EventType;
+
 //#define DEBUG_COVERAGE 1
 
 EventType* Coverage::_costType;

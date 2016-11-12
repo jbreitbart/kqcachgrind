@@ -23,12 +23,26 @@
 #ifndef SOURCEITEM_H
 #define SOURCEITEM_H
 
-#include <QTreeWidget>
+#include <qglobal.h>
+#include <qitemdelegate.h>
+#include <qsize.h>
+#include <qstring.h>
+#include <qstyleoption.h>
+#include <qtreewidget.h>
+#include <qvector.h>
 #include <QItemDelegate>
+#include <QTreeWidget>
 
+#include "subcost.h"
 #include "tracedata.h"
 
+class QModelIndex;
+class QPainter;
+class QWidget;
 class SourceView;
+class TraceLine;
+class TraceLineCall;
+class TraceLineJump;
 
 class SourceItem: public QTreeWidgetItem
 {

@@ -22,36 +22,49 @@
 
 #include "callgraphview.h"
 
-#include <stdlib.h>
+#include <QtCore/qglobal.h>
 #include <math.h>
-
-#include <QApplication>
-#include <QDebug>
-#include <QFile>
-#include <QFileDialog>
-#include <QTemporaryFile>
-#include <QTextStream>
-#include <QMatrix>
-#include <QPair>
-#include <QPainter>
-#include <QStyle>
-#include <QScrollBar>
-#include <QResizeEvent>
-#include <QMouseEvent>
-#include <QFocusEvent>
-#include <QKeyEvent>
-#include <QStyleOptionGraphicsItem>
-#include <QContextMenuEvent>
-#include <QList>
-#include <QPixmap>
-#include <QDesktopWidget>
-#include <QProcess>
-#include <QMenu>
-
+#include <qaction.h>
+#include <qalgorithms.h>
+#include <qapplication.h>
+#include <qbrush.h>
+#include <qbytearray.h>
+#include <qchar.h>
+#include <qcolor.h>
+#include <qdebug.h>
+#include <qdesktopwidget.h>
+#include <qevent.h>
+#include <qfile.h>
+#include <qfiledialog.h>
+#include <qfontmetrics.h>
+#include <qgraphicsscene.h>
+#include <qicon.h>
+#include <qiodevice.h>
+#include <qmatrix.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qpainter.h>
+#include <qpainterpath.h>
+#include <qpen.h>
+#include <qpixmap.h>
+#include <qprocess.h>
+#include <qscrollbar.h>
+#include <qstringlist.h>
+#include <qstyleoption.h>
+#include <qtemporaryfile.h>
+#include <qtextstream.h>
+#include <qvariant.h>
+#include <qvector.h>
+#include <qwidget.h>
 
 #include "config.h"
+#include "costitem.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
+#include "subcost.h"
+#include "tracedata.h"
 
 
 #define DEBUG_GRAPH 0
@@ -3187,4 +3200,6 @@ void CallGraphView::saveOptions(const QString& prefix, const QString& postfix)
 }
 
 #include "callgraphview.moc"
+
+class EventType;
 

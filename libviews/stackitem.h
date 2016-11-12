@@ -23,11 +23,15 @@
 #ifndef STACKITEM_H
 #define STACKITEM_H
 
+#include <qtreewidget.h>
 #include <QTreeWidget>
 
+#include "subcost.h"
 #include "tracedata.h"
 
 class StackSelection;
+class TraceCall;
+class TraceFunction;
 
 
 // for the stack browser

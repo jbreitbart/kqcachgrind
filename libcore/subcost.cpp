@@ -18,9 +18,8 @@
 
 
 #include "subcost.h"
-#include "tracedata.h"
 
-#include <QString>
+#include <qchar.h>
 
 
 //---------------------------------------------------

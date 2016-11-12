@@ -18,13 +18,19 @@
 
 #include "partlistitem.h"
 
-#include <math.h>
+#include <qglobal.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qstring.h>
 
-#include <QPixmap>
-
-#include "listutils.h"
-#include "coverage.h"
+#include "costitem.h"
 #include "globalconfig.h"
+#include "listutils.h"
+#include "tracedata.h"
+
+class EventType;
 
 
 // PartListItem

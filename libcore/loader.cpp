@@ -22,6 +22,9 @@
 
 #include "loader.h"
 
+#include <qglobal.h>
+#include <qlist.h>
+
 #include "logger.h"
 
 /// Loader
@@ -118,4 +121,3 @@ void Loader::loadFinished(const QString& msg)
     if (_logger)
 	_logger->loadFinished(msg);
 }
-

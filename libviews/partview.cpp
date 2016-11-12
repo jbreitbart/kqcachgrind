@@ -23,14 +23,22 @@
 
 #include "partview.h"
 
-#include <QAction>
-#include <QMenu>
-#include <QTreeWidget>
-#include <QHeaderView>
-#include <QKeyEvent>
+#include <qabstractitemview.h>
+#include <qglobal.h>
+#include <qheaderview.h>
+#include <qlist.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qpoint.h>
+#include <qstringlist.h>
 
+#include "context.h"
+#include "costitem.h"
 #include "partlistitem.h"
 #include "toplevelbase.h"
+#include "tracedata.h"
+
+class QWidget;
 
 
 //
@@ -256,4 +264,3 @@ void PartView::refresh()
     _inSelectionUpdate = false;
 }
 
-#include "partview.moc"

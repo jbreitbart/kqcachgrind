@@ -23,14 +23,18 @@
 #ifndef LISTUTILS_H
 #define LISTUTILS_H
 
+#include <qcolor.h>
+#include <qpixmap.h>
+#include <qstring.h>
+#include <QColor>
 #include <QPixmap>
 #include <QString>
-#include <QColor>
 
 #include "subcost.h"
 
 class EventType;
 class EventTypeSet;
+class ProfileCostArray;
 
 QString bigNum(SubCost);
 QPixmap colorPixmap(int w, int h, QColor c);

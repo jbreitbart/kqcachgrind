@@ -23,14 +23,27 @@
 
 #include "callview.h"
 
-#include <QAction>
-#include <QMenu>
-#include <QTreeWidget>
-#include <QHeaderView>
-#include <QKeyEvent>
+#include <qevent.h>
+#include <qglobal.h>
+#include <qheaderview.h>
+#include <qlist.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qpoint.h>
+#include <qsize.h>
+#include <qstringlist.h>
+#include <qtreeview.h>
 
-#include "globalconfig.h"
 #include "callitem.h"
+#include "context.h"
+#include "costitem.h"
+#include "eventtype.h"
+#include "globalconfig.h"
+#include "subcost.h"
+#include "tracedata.h"
+
+class QAction;
+class QWidget;
 
 
 //
@@ -319,4 +332,3 @@ void CallView::setCostColumnWidths()
 }
 
 
-#include "callview.moc"

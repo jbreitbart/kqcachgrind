@@ -19,6 +19,8 @@
 #ifndef STACKBROWSER_H
 #define STACKBROWSER_H
 
+#include <qstring.h>
+
 #include "tracedata.h"
 
 // A history of selected functions within stacks

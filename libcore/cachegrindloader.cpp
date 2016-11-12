@@ -16,16 +16,27 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "loader.h"
-
-#include <QIODevice>
-#include <QVector>
-#include <QDebug>
+#include <QtCore/qglobal.h>
+#include <qbytearray.h>
+#include <qchar.h>
+#include <qdebug.h>
+#include <qglobal.h>
+#include <qiodevice.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qvector.h>
 
 #include "addr.h"
+#include "costitem.h"
+#include "eventtype.h"
+#include "fixcost.h"
+#include "loader.h"
+#include "subcost.h"
 #include "tracedata.h"
 #include "utils.h"
-#include "fixcost.h"
+
+class FixPool;
 
 
 #define TRACE_LOADER 0

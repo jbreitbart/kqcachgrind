@@ -24,28 +24,39 @@
 #define QCGTOPLEVEL_H
 
 #include <qdatetime.h>
+#include <qmainwindow.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qstringlist.h>
 #include <QLabel>
 #include <QMainWindow>
-#include <QStringList>
 #include <QString>
+#include <QStringList>
 
+#include "context.h"
 #include "logger.h"
-#include "traceitemview.h"
-#include "tracedata.h"
 #include "toplevelbase.h"
+#include "tracedata.h"
+#include "traceitemview.h"
 
+class CostItem;
+class EventType;
+class FunctionSelection;
+class MainWidget;
 class MultiView;
+class PartSelection;
+class QAction;
+class QCloseEvent;
+class QComboBox;
 class QDockWidget;
 class QLabel;
-class QComboBox;
-class QProgressBar;
 class QMenu;
-
-class TraceData;
-class MainWidget;
-class PartSelection;
-class FunctionSelection;
+class QObject;
+class QProgressBar;
+class QStatusBar;
 class StackSelection;
+class TraceData;
 class TraceFunction;
 
 class QCGTopLevel : public QMainWindow, public Logger, public TopLevelBase

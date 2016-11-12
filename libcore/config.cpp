@@ -18,8 +18,7 @@
 
 #include "config.h"
 
-#include <QStringList>
-#include <QList>
+#include <qglobal.h>
 
 // helper functions
 

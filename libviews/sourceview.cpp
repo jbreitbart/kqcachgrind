@@ -22,18 +22,36 @@
 
 #include "sourceview.h"
 
-#include <QDebug>
-#include <QDir>
-#include <QFile>
-#include <QFileInfo>
-#include <QAction>
-#include <QMenu>
-#include <QScrollBar>
-#include <QHeaderView>
-#include <QKeyEvent>
+#include <QtCore/qglobal.h>
+#include <qalgorithms.h>
+#include <qbytearray.h>
+#include <qchar.h>
+#include <qdebug.h>
+#include <qdir.h>
+#include <qevent.h>
+#include <qfile.h>
+#include <qfileinfo.h>
+#include <qheaderview.h>
+#include <qiodevice.h>
+#include <qlist.h>
+#include <qmap.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qpoint.h>
+#include <qscrollbar.h>
+#include <qstringlist.h>
+#include <qtreeview.h>
+#include <string.h>
 
+#include "context.h"
+#include "costitem.h"
+#include "eventtype.h"
 #include "globalconfig.h"
 #include "sourceitem.h"
+#include "subcost.h"
+
+class QAction;
+class QWidget;
 
 
 
@@ -942,4 +960,3 @@ void SourceView::headerClicked(int col)
     }
 }
 
-#include "sourceview.moc"

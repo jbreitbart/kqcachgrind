@@ -19,17 +19,19 @@
 #ifndef COST_H
 #define COST_H
 
+#include <qstring.h>
 #include <QString>
 
-#include "subcost.h"
 #include "context.h"
+#include "subcost.h"
 #include "utils.h"
 
 class EventType;
-class EventTypeSet;
 class EventTypeMapping;
-class TracePart;
+class EventTypeSet;
+class FixString;
 class TraceData;
+class TracePart;
 
 /**
  * Base class for cost items.

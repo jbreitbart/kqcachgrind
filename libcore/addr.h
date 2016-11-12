@@ -19,6 +19,7 @@
 #ifndef ADDR_H
 #define ADDR_H
 
+#include <qstring.h>
 #include <QString>
 
 #include "utils.h"

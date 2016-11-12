@@ -23,18 +23,24 @@
 #ifndef CONFIGDIALOG_H
 #define CONFIGDIALOG_H
 
-#include <QString>
+#include <qdialog.h>
+#include <qmap.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtimer.h>
 #include <QDialog>
 #include <QMap>
+#include <QString>
 #include <QTimer>
 
 #include "configpage.h"
 
-class QWidget;
+class ConfigPage;
 class QLabel;
 class QListWidget;
+class QObject;
 class QStackedWidget;
-
+class QWidget;
 class TraceData;
 
 class ConfigDialog: public QDialog

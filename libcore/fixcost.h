@@ -26,8 +26,24 @@
  */
 #define USE_FIXCOST 1
 
-#include "tracedata.h"
+#include <qglobal.h>
+#include <stddef.h>
+
+#include "addr.h"
 #include "pool.h"
+#include "subcost.h"
+#include "tracedata.h"
+
+class FixPool;
+class FixString;
+class ProfileCostArray;
+class TraceCallCost;
+class TraceFunction;
+class TraceFunctionSource;
+class TraceJumpCost;
+class TracePart;
+class TracePartCall;
+class TracePartFunction;
 
 class PositionSpec
 {

@@ -26,12 +26,21 @@
 #ifndef MULTIVIEW_H
 #define MULTIVIEW_H
 
-#include <QSplitter>
+#include <qlist.h>
+#include <qobjectdefs.h>
+#include <qsplitter.h>
+#include <qstring.h>
 #include <QList>
+#include <QSplitter>
 
 #include "traceitemview.h"
 
+class CostItem;
+class QObject;
+class QWidget;
 class TabView;
+class TopLevelBase;
+class TraceData;
 
 class MultiView : public QSplitter, public TraceItemView
 {

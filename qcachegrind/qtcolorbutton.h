@@ -35,7 +35,21 @@
 #ifndef QTCOLORBUTTON_H
 #define QTCOLORBUTTON_H
 
+#include <qcolor.h>
+#include <qglobal.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtoolbutton.h>
 #include <QToolButton>
+
+class QDragEnterEvent;
+class QDragLeaveEvent;
+class QDropEvent;
+class QMouseEvent;
+class QObject;
+class QPaintEvent;
+class QWidget;
+class QtColorButtonPrivate;
 
 QT_BEGIN_NAMESPACE
 

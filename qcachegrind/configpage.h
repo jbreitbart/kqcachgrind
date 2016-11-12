@@ -23,8 +23,11 @@
 #ifndef CONFIGPAGE_H
 #define CONFIGPAGE_H
 
-#include <QString>
+#include <qmap.h>
+#include <qstring.h>
+#include <qwidget.h>
 #include <QMap>
+#include <QString>
 #include <QWidget>
 
 class ConfigPage: public QWidget

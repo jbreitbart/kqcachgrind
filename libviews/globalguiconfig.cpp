@@ -22,7 +22,17 @@
 
 #include "globalguiconfig.h"
 
+#include <QtCore/qglobal.h>
+#include <qalgorithms.h>
+#include <qchar.h>
+#include <qglobal.h>
+#include <qnamespace.h>
+#include <qvariant.h>
+
 #include "config.h"
+#include "costitem.h"
+#include "eventtype.h"
+#include "tracedata.h"
 
 
 //

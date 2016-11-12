@@ -22,11 +22,22 @@
 
 #include "sourcesettings.h"
 
-#include <QTreeWidgetItem>
-#include <QFileDialog>
+#include <qcombobox.h>
+#include <qdir.h>
+#include <qfiledialog.h>
+#include <qhash.h>
+#include <qlineedit.h>
+#include <qlist.h>
+#include <qmap.h>
+#include <qobject.h>
+#include <qpushbutton.h>
+#include <qstringlist.h>
+#include <qtreewidget.h>
 
-#include "tracedata.h"
 #include "globalconfig.h"
+#include "tracedata.h"
+
+class QWidget;
 
 //
 // SourceSettings
@@ -214,4 +225,3 @@ void SourceSettings::accept()
     }
 }
 
-#include "sourcesettings.moc"

@@ -23,10 +23,18 @@
 #ifndef PARTVIEW_H
 #define PARTVIEW_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtreewidget.h>
 #include <QTreeWidget>
 
 #include "tracedata.h"
 #include "traceitemview.h"
+
+class CostItem;
+class QObject;
+class QPoint;
+class QWidget;
 
 class PartView: public QTreeWidget, public TraceItemView
 {

@@ -23,10 +23,18 @@
 #ifndef EVENTTYPEVIEW_H
 #define EVENTTYPEVIEW_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtreewidget.h>
 #include <QTreeWidget>
 
 #include "tracedata.h"
 #include "traceitemview.h"
+
+class CostItem;
+class QObject;
+class QPoint;
+class QWidget;
 
 class EventTypeView: public QTreeWidget, public TraceItemView
 {

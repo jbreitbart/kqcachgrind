@@ -22,10 +22,8 @@
 
 #include "qcgconfig.h"
 
-#include <QSettings>
-
-#include "tracedata.h"
-#include "traceitemview.h"
+#include <qsettings.h>
+#include <qstringlist.h>
 
 //
 // QCGConfigGroup

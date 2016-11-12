@@ -23,22 +23,28 @@
 
 #include "treemap.h"
 
+#include <QtCore/qglobal.h>
 #include <math.h>
-#include <QAction>
-#include <QMenu>
-#include <QApplication>
-#include <QDebug>
-#include <QPainter>
-#include <QStyle>
-#include <QPixmap>
-#include <QPaintEvent>
-#include <QKeyEvent>
-#include <QShowEvent>
-#include <QContextMenuEvent>
-#include <QMouseEvent>
-#include <QToolTip>
-#include <QStylePainter>
-#include <QStyleOptionFocusRect>
+#include <qaction.h>
+#include <qalgorithms.h>
+#include <qapplication.h>
+#include <qchar.h>
+#include <qcoreevent.h>
+#include <qdebug.h>
+#include <qevent.h>
+#include <qfontmetrics.h>
+#include <qglobal.h>
+#include <qmenu.h>
+#include <qpainter.h>
+#include <qpalette.h>
+#include <qpoint.h>
+#include <qrgb.h>
+#include <qsize.h>
+#include <qstyle.h>
+#include <qstyleoption.h>
+#include <qstylepainter.h>
+#include <qtooltip.h>
+#include <qvariant.h>
 
 
 // set this to 1 to enable debug output

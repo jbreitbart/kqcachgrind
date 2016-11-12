@@ -30,20 +30,41 @@
 #ifndef TREEMAP_H
 #define TREEMAP_H
 
-#include <QString>
-#include <QWidget>
-#include <QPixmap>
+#include <qcolor.h>
+#include <qfont.h>
+#include <qlist.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qrect.h>
+#include <qstring.h>
+#include <qstringlist.h>
+#include <qvector.h>
+#include <qwidget.h>
 #include <QColor>
-#include <QStringList>
-#include <QPaintEvent>
-#include <QKeyEvent>
 #include <QContextMenuEvent>
+#include <QKeyEvent>
 #include <QMouseEvent>
+#include <QPaintEvent>
+#include <QPixmap>
+#include <QString>
+#include <QStringList>
+#include <QWidget>
 
+class QAction;
+class QContextMenuEvent;
+class QEvent;
+class QFontMetrics;
+class QKeyEvent;
 class QMenu;
-class TreeMapWidget;
+class QMouseEvent;
+class QObject;
+class QPaintEvent;
+class QPainter;
+class QPoint;
 class TreeMapItem;
 class TreeMapItemList;
+class TreeMapWidget;
 
 
 /**

@@ -25,18 +25,23 @@
 #ifndef TRACEDATA_H
 #define TRACEDATA_H
 
+#include <qglobal.h>
+#include <qlist.h>
+#include <qmap.h>
+#include <qset.h>
 #include <qstring.h>
 #include <qstringlist.h>
-#include <qmap.h>
+#include <qvector.h>
 
-#include "costitem.h"
-#include "subcost.h"
-#include "utils.h"
 #include "addr.h"
 #include "context.h"
+#include "costitem.h"
 #include "eventtype.h"
+#include "subcost.h"
+#include "utils.h"
 
 class QFile;
+class QIODevice;
 
 /**
  * All cost items are classes prefixed with "Trace".
@@ -118,48 +123,45 @@ class QFile;
  */
 
 
-class FixCost;
+class DynPool;
+class EventType;
+class EventTypeMapping;
+class EventTypeSet;
 class FixCallCost;
+class FixCost;
 class FixJump;
 class FixPool;
-class DynPool;
 class Logger;
-
 class ProfileCostArray;
-class EventType;
-class EventTypeSet;
-class EventTypeMapping;
-class TraceJumpCost;
+class TraceCall;
 class TraceCallCost;
+class TraceClass;
+class TraceData;
+class TraceFile;
+class TraceFunction;
+class TraceFunctionCycle;
+class TraceFunctionSource;
 class TraceInclusiveCost;
-
+class TraceInstr;
+class TraceInstrCall;
+class TraceInstrJump;
+class TraceJumpCost;
+class TraceLine;
+class TraceLineCall;
+class TraceLineJump;
+class TraceLineRegion;
+class TraceObject;
+class TracePart;
+class TracePartCall;
+class TracePartClass;
+class TracePartFile;
+class TracePartFunction;
 class TracePartInstr;
 class TracePartInstrCall;
 class TracePartLine;
 class TracePartLineCall;
-class TracePartCall;
 class TracePartLineRegion;
-class TracePartFunction;
-class TracePartClass;
 class TracePartObject;
-class TracePartFile;
-
-class TraceInstr;
-class TraceInstrJump;
-class TraceInstrCall;
-class TraceLine;
-class TraceLineJump;
-class TraceLineCall;
-class TraceCall;
-class TraceLineRegion;
-class TraceFunctionSource;
-class TraceFunction;
-class TraceFunctionCycle;
-class TraceClass;
-class TraceObject;
-class TraceFile;
-class TracePart;
-class TraceData;
 
 typedef QList<ProfileCostArray*> TraceCostList;
 typedef QList<TraceJumpCost*> TraceJumpCostList;

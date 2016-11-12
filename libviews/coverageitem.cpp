@@ -22,10 +22,20 @@
 
 #include "coverageitem.h"
 
+#include <qcolor.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
 
+#include "costitem.h"
+#include "coverage.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "listutils.h"
-#include "coverage.h"
+#include "tracedata.h"
+
+class EventType;
 
 
 // CallerCoverageItem

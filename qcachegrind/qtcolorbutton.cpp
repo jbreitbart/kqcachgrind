@@ -35,12 +35,20 @@
 
 #include "qtcolorbutton.h"
 
-#include <QColorDialog>
-#include <QPainter>
-#include <QMimeData>
-#include <QDrag>
-#include <QDragEnterEvent>
-#include <QApplication>
+#include <QtCore/qglobal.h>
+#include <qapplication.h>
+#include <qbrush.h>
+#include <qcolordialog.h>
+#include <qdrag.h>
+#include <qevent.h>
+#include <qmimedata.h>
+#include <qnamespace.h>
+#include <qpainter.h>
+#include <qpixmap.h>
+#include <qpoint.h>
+#include <qrect.h>
+#include <qsizepolicy.h>
+#include <qvariant.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -267,3 +275,5 @@ void QtColorButton::dropEvent(QDropEvent *event)
 QT_END_NAMESPACE
 
 #include "qtcolorbutton.moc"
+
+class QWidget;

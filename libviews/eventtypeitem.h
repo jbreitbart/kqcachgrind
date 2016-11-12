@@ -23,9 +23,16 @@
 #ifndef EVENTTYPEITEM_H
 #define EVENTTYPEITEM_H
 
+#include <qtreewidget.h>
+#include <qvariant.h>
 #include <QTreeWidgetItem>
 
+#include "context.h"
+#include "subcost.h"
 #include "tracedata.h"
+
+class EventType;
+class TraceCostItem;
 
 class EventTypeItem: public QTreeWidgetItem
 {

@@ -18,9 +18,13 @@
 
 #include "costitem.h"
 
-#include <QObject>
+#include <qglobal.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
 
+#include "eventtype.h"
 #include "tracedata.h"
+#include "utils.h"
 
 #define TRACE_DEBUG      0
 #define TRACE_ASSERTIONS 0

@@ -22,26 +22,40 @@
 
 #include "functionselection.h"
 
-#include <QLabel>
-#include <QPushButton>
-#include <QComboBox>
-#include <QLineEdit>
-#include <QRegExp>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QAction>
-#include <QMenu>
-#include <QDebug>
-#include <QTreeView>
-#include <QHeaderView>
-#include <QToolTip>
-#include <QHelpEvent>
+#include <qabstractitemmodel.h>
+#include <qabstractitemview.h>
+#include <qaction.h>
+#include <qboxlayout.h>
+#include <qcombobox.h>
+#include <qcoreevent.h>
+#include <qevent.h>
+#include <qglobal.h>
+#include <qheaderview.h>
+#include <qitemselectionmodel.h>
+#include <qlabel.h>
+#include <qlineedit.h>
+#include <qlist.h>
+#include <qmenu.h>
+#include <qpoint.h>
+#include <qrect.h>
+#include <qregexp.h>
+#include <qsize.h>
+#include <qstringlist.h>
+#include <qtooltip.h>
+#include <qtreeview.h>
+#include <qtreewidget.h>
+#include <qvariant.h>
 
-#include "traceitemview.h"
-#include "stackbrowser.h"
+#include "costitem.h"
 #include "costlistitem.h"
-#include "globalconfig.h"
+#include "eventtype.h"
 #include "functionlistmodel.h"
+#include "globalconfig.h"
+#include "toplevelbase.h"
+#include "tracedata.h"
+#include "traceitemview.h"
+
+class QObject;
 
 
 // custom item delegate for function list
@@ -906,4 +920,3 @@ void FunctionSelection::functionHeaderClicked(int col)
 
 
 
-#include "functionselection.moc"

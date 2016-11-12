@@ -19,9 +19,14 @@
 #ifndef COSTLISTITEM_H
 #define COSTLISTITEM_H
 
+#include <qtreewidget.h>
 #include <QTreeWidget>
 
+#include "subcost.h"
 #include "tracedata.h"
+
+class EventType;
+class TraceCostItem;
 
 class CostListItem: public QTreeWidgetItem
 {

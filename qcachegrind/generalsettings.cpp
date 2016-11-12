@@ -21,7 +21,16 @@
  */
 
 #include "generalsettings.h"
+
+#include <qlineedit.h>
+#include <qmap.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
+
 #include "globalconfig.h"
+
+class QWidget;
 
 //
 // GeneralSettings

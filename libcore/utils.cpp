@@ -22,10 +22,12 @@
 
 #include "utils.h"
 
+#include <QtCore/qglobal.h>
 #include <errno.h>
-
-#include <QIODevice>
-#include <QFile>
+#include <qchar.h>
+#include <qfile.h>
+#include <qiodevice.h>
+#include <string.h>
 
 
 

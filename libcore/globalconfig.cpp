@@ -22,9 +22,17 @@
 
 #include "globalconfig.h"
 
-#include <QtDebug>
+#include <QtCore/qglobal.h>
+#include <qdebug.h>
+#include <qiterator.h>
+#include <qlist.h>
+#include <qmap.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qvariant.h>
 
 #include "config.h"
+#include "eventtype.h"
 #include "tracedata.h"
 
 

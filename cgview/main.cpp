@@ -16,14 +16,24 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include <QCoreApplication>
-#include <QTextStream>
+#include <qcoreapplication.h>
+#include <qglobal.h>
+#include <qlist.h>
+#include <qmap.h>
+#include <qstring.h>
+#include <qstringlist.h>
+#include <qtextstream.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-#include "tracedata.h"
-#include "loader.h"
 #include "config.h"
+#include "costitem.h"
+#include "eventtype.h"
 #include "globalconfig.h"
+#include "loader.h"
 #include "logger.h"
+#include "subcost.h"
+#include "tracedata.h"
 
 /*
  * Just a simple command line tool using libcore

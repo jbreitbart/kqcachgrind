@@ -25,10 +25,20 @@
 
 #include "multiview.h"
 
-#include <QDebug>
+#include <QtCore/qglobal.h>
+#include <qdebug.h>
+#include <qglobal.h>
+#include <qnamespace.h>
+#include <qstringlist.h>
+#include <qvariant.h>
+#include <qwidget.h>
 
 #include "config.h"
+#include "costitem.h"
 #include "tabview.h"
+
+class TopLevelBase;
+class TraceData;
 
 
 //
@@ -236,4 +246,3 @@ void MultiView::saveOptions(const QString& prefix, const QString& postfix)
 }
 
 
-#include "multiview.moc"

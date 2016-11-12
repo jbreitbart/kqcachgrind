@@ -22,10 +22,18 @@
 
 #include "eventtypeitem.h"
 
-#include <QPixmap>
+#include <QtCore/qglobal.h>
+#include <qicon.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qstring.h>
 
+#include "costitem.h"
+#include "eventtype.h"
 #include "globalconfig.h"
 #include "listutils.h"
+#include "tracedata.h"
 
 
 // EventTypeItem

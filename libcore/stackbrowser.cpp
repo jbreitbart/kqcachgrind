@@ -18,6 +18,13 @@
 
 #include "stackbrowser.h"
 
+#include <QtCore/qglobal.h>
+#include <qbytearray.h>
+#include <qglobal.h>
+
+#include "eventtype.h"
+#include "subcost.h"
+
 
 // Stack
 

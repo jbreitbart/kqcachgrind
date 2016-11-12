@@ -23,11 +23,22 @@
 #ifndef INSTRVIEW_H
 #define INSTRVIEW_H
 
+#include <qobjectdefs.h>
+#include <qstring.h>
+#include <qtreewidget.h>
+#include <qvector.h>
 #include <QTreeWidget>
 
+#include "addr.h"
+#include "tracedata.h"
 #include "traceitemview.h"
 
+class CostItem;
 class InstrItem;
+class QKeyEvent;
+class QObject;
+class QPoint;
+class QWidget;
 
 class InstrView : public QTreeWidget, public TraceItemView
 {

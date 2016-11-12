@@ -23,10 +23,13 @@
 #ifndef QCGCONFIG_H
 #define QCGCONFIG_H
 
+#include <qstring.h>
+#include <qvariant.h>
+
 #include "config.h"
 
-class QSettings;
 class QCGConfigStorage;
+class QSettings;
 
 class QCGConfigGroup: public ConfigGroup
 {

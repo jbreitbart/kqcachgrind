@@ -23,10 +23,20 @@
 #ifndef PARTGRAPH_H
 #define PARTGRAPH_H
 
+#include <qcolor.h>
+#include <qobjectdefs.h>
+#include <qpixmap.h>
+#include <qstring.h>
 #include <QPixmap>
 
-#include "treemap.h"
+#include "context.h"
 #include "tracedata.h"
+#include "treemap.h"
+
+class EventType;
+class ProfileCostArray;
+class QObject;
+class QWidget;
 
 class PartAreaWidget: public TreeMapWidget
 {

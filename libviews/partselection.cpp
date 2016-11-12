@@ -22,16 +22,23 @@
 
 #include "partselection.h"
 
-#include <QLabel>
-#include <QPushButton>
-#include <QVBoxLayout>
-#include <QAction>
-#include <QMenu>
+#include <QtCore/qglobal.h>
+#include <qaction.h>
+#include <qboxlayout.h>
+#include <qglobal.h>
+#include <qlabel.h>
+#include <qmenu.h>
+#include <qobject.h>
+#include <qsizepolicy.h>
+#include <qvariant.h>
 
-#include "toplevelbase.h"
-#include "partgraph.h"
-#include "globalconfig.h"
 #include "config.h"
+#include "context.h"
+#include "costitem.h"
+#include "globalconfig.h"
+#include "partgraph.h"
+#include "toplevelbase.h"
+#include "treemap.h"
 
 //
 // PartSelection
@@ -596,3 +603,5 @@ void PartSelection::fillInfo()
 }
 
 #include "partselection.moc"
+
+class QPoint;

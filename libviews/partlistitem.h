@@ -19,9 +19,17 @@
 #ifndef PARTLISTITEM_H
 #define PARTLISTITEM_H
 
+#include <qtreewidget.h>
 #include <QTreeWidget>
 
+#include "context.h"
+#include "subcost.h"
 #include "tracedata.h"
+
+class EventType;
+class ProfileCostArray;
+class TraceCostItem;
+class TracePart;
 
 /**
  * For info tab, trace part list.

@@ -22,23 +22,40 @@
 
 #include "instrview.h"
 
+#include <QtCore/qglobal.h>
 #include <assert.h>
-
-#include <QDebug>
-#include <QDir>
-#include <QFile>
-#include <QFileInfo>
-#include <QProcess>
-#include <QAction>
-#include <QMenu>
-#include <QScrollBar>
-#include <QHeaderView>
-#include <QKeyEvent>
-#include <QProcessEnvironment>
+#include <qaction.h>
+#include <qalgorithms.h>
+#include <qbytearray.h>
+#include <qdebug.h>
+#include <qdir.h>
+#include <qevent.h>
+#include <qfile.h>
+#include <qfileinfo.h>
+#include <qglobal.h>
+#include <qheaderview.h>
+#include <qlist.h>
+#include <qmap.h>
+#include <qmenu.h>
+#include <qnamespace.h>
+#include <qpoint.h>
+#include <qprocess.h>
+#include <qscrollbar.h>
+#include <qstringlist.h>
+#include <qtextstream.h>
+#include <qtreeview.h>
+#include <qvariant.h>
+#include <string.h>
 
 #include "config.h"
+#include "context.h"
+#include "costitem.h"
+#include "eventtype.h"
 #include "globalconfig.h"
 #include "instritem.h"
+#include "subcost.h"
+
+class QWidget;
 
 
 // InstrView defaults
@@ -1180,4 +1197,3 @@ void InstrView::saveOptions(const QString& prefix, const QString& postfix)
     delete g;
 }
 
-#include "instrview.moc"

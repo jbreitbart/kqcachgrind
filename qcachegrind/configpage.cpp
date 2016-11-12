@@ -22,8 +22,7 @@
 
 #include "configpage.h"
 
-#include <QLabel>
-#include <QWidget>
+#include <qobjectdefs.h>
 
 //
 // ConfigPage

@@ -24,39 +24,50 @@
 
 #include "qcgtoplevel.h"
 
+#include <QtCore/qglobal.h>
+#include <qaction.h>
+#include <qapplication.h>
+#include <qbytearray.h>
+#include <qcombobox.h>
+#include <qdbusconnection.h>
+#include <qdebug.h>
+#include <qdialog.h>
+#include <qdir.h>
+#include <qdockwidget.h>
+#include <qevent.h>
+#include <qeventloop.h>
+#include <qfile.h>
+#include <qfiledialog.h>
+#include <qglobal.h>
+#include <qicon.h>
+#include <qkeysequence.h>
+#include <qlabel.h>
+#include <qlist.h>
+#include <qmenu.h>
+#include <qmenubar.h>
+#include <qmessagebox.h>
+#include <qprogressbar.h>
+#include <qstatusbar.h>
+#include <qstyle.h>
+#include <qtimer.h>
+#include <qtoolbar.h>
+#include <qvariant.h>
+#include <qwhatsthis.h>
 #include <stdlib.h> // for system()
 
-#include <QApplication>
-#include <QDebug>
-#include <QDockWidget>
-#include <QTimer>
-#include <QByteArray>
-#include <QLabel>
-#include <QMenuBar>
-#include <QProgressBar>
-#include <QFile>
-#include <QFileDialog>
-#include <QEventLoop>
-#include <QToolBar>
-#include <QComboBox>
-#include <QMessageBox>
-#include <QStatusBar>
-#include <QWhatsThis>
-
-#ifdef QT_DBUS_SUPPORT
-#include <QtDBus/QDBusConnection>
-#endif
-
-#include "partselection.h"
-#include "functionselection.h"
-#include "stackselection.h"
-#include "stackbrowser.h"
-#include "tracedata.h"
+#include "callgraphview.h"
 #include "config.h"
+#include "configdialog.h"
+#include "costitem.h"
+#include "eventtype.h"
+#include "functionselection.h"
+#include "globalconfig.h"
 #include "globalguiconfig.h"
 #include "multiview.h"
-#include "callgraphview.h"
-#include "configdialog.h"
+#include "partselection.h"
+#include "stackbrowser.h"
+#include "stackselection.h"
+#include "tracedata.h"
 
 QCGTopLevel::QCGTopLevel()
 {
@@ -2079,4 +2090,3 @@ void QCGTopLevel::loadWarning(int line, const QString& msg)
                << ":" << line << ": " << msg;
 }
 
-#include "qcgtoplevel.moc"
