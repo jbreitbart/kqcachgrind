@@ -1,0 +1,7 @@
+-fPIC
+-Ikcachegrind
+-Ilibcore
+-Ilibviews
+-Iqcachegrind
+-I/usr/include/x86_64-linux-gnu/qt5
+-I/usr/include/x86_64-linux-gnu/qt5/QtCore
